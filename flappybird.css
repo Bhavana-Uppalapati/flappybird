@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#game{
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    margin: 1rem auto;
+    overflow: hidden;
+    background-image: url(./background.png);
+    /* background-size: cover; */
+}
+#block{
+    width: 50px;
+    height: 500px;
+    background-color: green;
+    position: relative;
+    left: 400px;
+    animation: block  2s linear  infinite  ;;
+}
+@keyframes block {
+    0%{
+        left:400px
+    }
+    100%{
+        left: -50px;
+    }
+    
+}
+#space{
+    height: 150px;
+    width: 50px;
+    background-color:#71c5cf;
+    position: relative;
+    left: 400px;
+    top:-500px;
+    animation: block  2s linear   infinite  ;
+}
+#bird{
+    position: absolute;
+    top: 100px;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+#bird img{
+    height: 50px;
+    width: 50px;
+}
+#result{
+    height: 70vh;
+    width: 100%;
+    background-color: #038696;
+    /* // */
+    /* margin: 5rem auto; */
+    padding-top: 250px;
+    /* border: 2px solid white; */
+    border-radius: 20px;
+    display: none; 
+    text-align: center;
+
+}
+#h1{
+    margin-bottom: 10px;
+    color: #f7a34d;
+    font-size: 70px;
+    text-shadow: 0px 2px 0px navajowhi;
+}
+.result_box{
+    background-color: #e0d796;
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    padding-top: 24px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px;
+}
+#btn{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 11px;
+    background-color: green;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    cursor: pointer;
+
+}
+#text{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: seashell;
+}
