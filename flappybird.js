@@ -1,5 +1,5 @@
 const space= document.getElementById("space");
-var result = document.getElementById("result");
+var result = document.getElementById("result_box");
 var text = document.getElementById("text");
 var game  = document.getElementById("game");
 var bird = document.getElementById('bird')
@@ -30,8 +30,8 @@ function hole(){
       if((birdTop > 450) || ((blockLeft<50)&& (blockLeft > -50) && ((birdTop < hTop) || (birdTop > hTop + 100 )))){
           result.style.display = "block";
           text.innerText = `Score : ${score}`;
-          game.style.display = "none";
-        //   score = 0;
+          score = 0;
+        clearInterval(fall)
          
 }
 },10)
