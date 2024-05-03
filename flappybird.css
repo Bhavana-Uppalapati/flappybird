@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
+
 #game{
+    
     height: 500px;
     width: 400px;
     border: 1px solid black;
@@ -48,11 +50,12 @@
     height: 50px;
     width: 50px;
 }
-/* #result{
-    height: 70vh;
-    width: 100%;
+#result{
+    height: 100px;
+    width: 30%;
+    position: relative;
     background-color: #038696;
- 
+    display: none;
     margin: 5rem auto;
      padding-top: 250px;
      border: 2px solid white; 
@@ -60,18 +63,16 @@
     display: none; 
     text-align: center; 
 
-}  */
-#h1{
+} 
+#game_over{
     margin-bottom: 10px;
     color: #f7a34d;
-    font-size: 25px;
-    text-shadow: 0px 2px 0px navajowhi;
+    font-size: 60px;
+    text-shadow: 0px 1px 0px cornsilk;
 }
 #result_box{
-  position: relative;
-  bottom: 350px;
-  display: none;
-background-color: #e0d796;
+
+ background-color: #e0d796;
     width: 300px;
     height: 100px;
     margin: auto;
@@ -84,16 +85,17 @@ background-color: #e0d796;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 11px;
-    background-color: green;
+    background-color: red;
     color: white;
     font-size: 1.5rem;
     text-transform: uppercase;
     margin-top: 1rem;
     cursor: pointer;
+    margin-top: 20px;
 
 }
 #text{
     margin-top: 1rem;
     font-size: 2rem;
-    color: seashell;
+    color: white;
 }
