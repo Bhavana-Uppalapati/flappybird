@@ -6,7 +6,8 @@ var game  = document.getElementById("game");
 var jumping = 0;
 var score = 0;
 var audio = new Audio();
-audio.src = "./abc.mp3"
+audio.src = "./flap.mp3"
+
 
 //animation 
 
@@ -28,11 +29,10 @@ function hol(){
       var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"))
       var hTop = (500 + holeTop);
       if((birdTop > 450) || ((blockLeft<50)&& (blockLeft > -50) && ((birdTop < hTop) || (birdTop > hTop + 100 )))){
-        audio.pause()
           result.style.display = "block";
           text.innerText = `Score : ${score}`;
           game.style.display = "none";
-          score = 0;
+          
 
           
       }
