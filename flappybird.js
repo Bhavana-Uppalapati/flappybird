@@ -33,16 +33,9 @@ function hol(){
           text.innerText = `Score : ${score}`;
           game.style.display = "none";
           
+}
 
-          
-      }
-
-     
-
-
- },10)
-
-
+},10)
  //jump
 function jump(){
    jumping = 1;

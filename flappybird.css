@@ -1,14 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-image: url(./bg2.webp);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#game{
-    
+#game {
     height: 500px;
     width: 400px;
     border: 1px solid black;
@@ -17,74 +18,80 @@ body{
     background-image: url(./background.png);
     /* background-size: cover; */
 }
-#block{
+
+#block {
     width: 50px;
     height: 500px;
     background-color: green;
     position: relative;
     left: 400px;
-    animation: block  2s linear  infinite  ;;
+    animation: block 2s linear infinite;
 }
+
 @keyframes block {
-    0%{
-        left:400px
+    0% {
+        left: 400px;
     }
-    100%{
+    100% {
         left: -50px;
     }
-    
 }
-#space{
+
+#space {
     height: 150px;
     width: 50px;
-    background-color:#71c5cf;
+    background-color: #71c5cf;
     position: relative;
     left: 400px;
-    top:-500px;
-    animation: block  2s linear   infinite  ;
+    top: -500px;
+    animation: block 2s linear infinite;
 }
-#bird{
+
+#bird {
     position: absolute;
     top: 100px;
     height: 50px;
     width: 50px;
     overflow: hidden;
 }
-#bird img{
+
+#bird img {
     height: 50px;
     width: 50px;
 }
-#result{
-    height: 100px;
-    width: 30%;
+
+#result {
+    margin: auto;
+    height: 50vh;
+    width: 30vw;
     position: relative;
     background-color: #038696;
     display: none;
-    margin: 5rem auto;
-     padding-top: 250px;
-     border: 2px solid white; 
-     border-radius: 20px;
-    display: none; 
-    text-align: center; 
+    /* margin: 5rem auto; */
+    /* padding-top: 250px; */
+    border: 2px solid white;
+    border-radius: 20px;
+    text-align: center;
     box-shadow: 5px 5px 10px white;
     border: none;
+    margin-top: 100px;
+}
 
-} 
-#game_over{
+#game_over {
     margin-bottom: 10px;
     position: absolute;
     top: 30px;
     left: 66px;
-
     color: #f7a34d;
     font-size: 60px;
     text-shadow: 0px 1px 0px cornsilk;
 }
-#result_box{
+
+#result_box {
     position: absolute;
     top: 121px;
-    left: 61px;
-   background-color: #e0d796;
+    left: 70px;
+    background-color: #e0d796;
     width: 300px;
     height: 100px;
     margin: auto;
@@ -93,7 +100,8 @@ body{
     border-radius: 20px;
     box-shadow: 5px 5px 10px;
 }
-#btn{
+
+#btn {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 11px;
@@ -103,21 +111,131 @@ body{
     text-transform: uppercase;
     margin-top: 1rem;
     cursor: pointer;
-    margin-top: 20px;
-    
-    position: relative;
-    top: 44px;
-    right: 90px;
-
-
+    position: absolute;
+    top: 266px;
+    left: 130px;
 }
-#text{
+
+#text {
     margin-top: 1rem;
     font-size: 2rem;
     color: white;
 }
+
 #result img{
     position: relative;
     left: 83px;
     width: 200px;
+}
+
+
+@media screen and (max-width: 480px) {
+    #game {
+        width: 260px;
+        height: 400px;
+    }
+
+    #block {
+        width: 30px;
+        left: 260px;
+    }
+
+    @keyframes block {
+        0% {
+            left: 260px;
+        }
+        100% {
+            left: -30px;
+        }
+    }
+
+    #space {
+        width: 30px;
+        left: 260px;
+    }
+
+    #result {
+        width: 80vw;
+    }
+
+    #game_over {
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 34px; 
+    }
+
+    #result_box {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+
+    #btn {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #result img {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (min-width:576px) and (max-width: 786px) {
+    #game {
+        width: 300px;
+    }
+
+    #block {
+        width: 40px;
+        left: 300px;
+    }
+
+    @keyframes block {
+        0% {
+            left: 300px;
+        }
+        100% {
+            left: -40px;
+        }
+    }
+
+    #space {
+        width: 40px;
+        left: 300px;
+    }
+
+    #result {
+        width: 56vw;
+    }
+
+    #game_over {
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 43px;
+    }
+
+    #result_box {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+    }
+
+    #btn {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #result img {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (min-width:786px) and (max-width:1024px){
+    #result{
+        width: 40vw;
+        margin-top:100px
+    }
+
 }
