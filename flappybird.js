@@ -19,7 +19,6 @@ function hol(){
    score++;
 }
 
-
 //fall and game over
  var fall = setInterval(function(){
      var birdTop = parseInt(window.getComputedStyle(bird).getPropertyValue("top"));
@@ -49,3 +48,4 @@ function jump(){
 }
 
 window.addEventListener("keydown", jump)
+window.addEventListener("touchstart", jump);
